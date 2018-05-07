@@ -85,7 +85,7 @@ var Cartpole = exports.Cartpole = function () {
                 dt = _options2.dt,
                 g = _options2.g;
 
-            var F = action == 0 ? -1 : 1 * forceMult;
+            var F = (action == 0 ? -1 : 1) * forceMult;
 
             var thetaacc_num = g * Math.sin(this.theta) + Math.cos(this.theta) * (-F - massP * poleL * this.thetadot * this.thetadot * Math.sin(this.theta)) / massSum;
             var thetaacc_den = poleL * (4 / 3 - massP * Math.pow(Math.cos(this.theta), 2) / massSum);
