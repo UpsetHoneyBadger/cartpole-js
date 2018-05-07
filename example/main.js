@@ -1,7 +1,7 @@
 
 const height = 300,
       width = 500,
-      frameRate = 30
+      frameRate = 10
 
 let action = 0
 
